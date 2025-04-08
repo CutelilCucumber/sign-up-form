@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('norse-bold-font/Norse-Bold.woff2') format('woff2'),
+        url('norse-bold-font/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,body {
+    height:100%; 
+}
+body {
+    display: flex;
+    flex: 1;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+}
+.container>div {
+    padding-left: 2em;
+}
+#scenery {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/bgImage.jpg);
+    background-size: cover;
+    flex-grow: .5;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);;
+    color: white;
+    font-family: "Norse";
+    font-size: 30px;
+    padding: 0 0 0 0;
+    margin-top: 6em;
+}
+#credit {
+    margin-top: auto;
+    text-align: center;
+    color: white;
+}
+
+form {
+    padding: 2em 0em 2em 2em;
+    box-shadow: 1px 2px 5px 0px rgba(1,37,61,1);
+    display: flex;
+    flex-direction: column;
+}
+form>div {
+    display: flex;
+}
+#info {
+    padding-top: 2em;
+    max-width: 550px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+label {
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: rgb(10, 15, 82);
+}
+input {
+    border: solid 1px #596D48;
+    border-radius: 2px;
+    font-size: 16px;
+}
+form>div>p {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4em;
+}
+form>span {
+    color: rgb(10, 15, 82);
+    font-size: 18px;
+    font-weight: 600;
+}
+button {
+    background-color: #a5a5ec;
+    box-shadow: 1px 2px 5px 0px rgba(1,37,61,1);
+    border: 0px;
+    border-radius: 10px;
+    padding: 1em 3em 1em 3em;
+    font-weight: 800;
+    font-size: 12px;
+}
+input:invalid {
+    border-color: #900;
+}
+  input:focus {
+  outline-style: solid;
+  outline-color: blue;
+  box-shadow: 1px 2px 5px 0px rgba(1,37,61,1)
+}
+  input:focus:invalid {
+    outline: none;
+}
+#continue {
+    margin-top: -3em;
+    margin-bottom: 3em;
+}
